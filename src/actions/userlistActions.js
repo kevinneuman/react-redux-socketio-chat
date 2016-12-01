@@ -1,6 +1,6 @@
 export function receiveUsers(data) {
     return {
-        type: "USERS_ADD",
+        type: "USERLIST_ADD",
         payload: data
     }
 }

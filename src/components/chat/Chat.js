@@ -27,22 +27,22 @@ class Chat extends React.Component {
 
         self = this;
         // receive message
-        socket.on('chat message', function (msg) {
+        socket.on('chat message', function(msg) {
             self.props.dispatch(receiveMessage(msg));
         });
 
         // receive join message
-        socket.on('chat join', function (msg) {
+        socket.on('chat join', function(msg) {
             self.props.dispatch(receiveMessage(msg));
         });
 
         // receive leave message
-        socket.on('chat leave', function (msg) {
+        socket.on('chat leave', function(msg) {
             self.props.dispatch(receiveMessage(msg));
         });
 
         // receive userlist
-        socket.on('chat users', function (msg) {
+        socket.on('chat users', function(msg) {
             self.props.dispatch(receiveUsers(msg));
         });
 
@@ -60,14 +60,14 @@ class Chat extends React.Component {
     }
 
     render() {
-        const { userlist, chat } = this.props;
+        const { userlist, messages } = this.props;
 
         return (
             <div>
                 <h1 style={styles.title}>Socket.IO Chat</h1>
 
                 <Messages
-                    messages={chat.messages} />
+                    messages={messages} />
 
                 <form onSubmit={(event) => this.handleClick(event)}>
                     <input

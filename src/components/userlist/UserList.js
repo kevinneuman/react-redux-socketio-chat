@@ -9,6 +9,7 @@ class UserList extends React.Component {
             userlist.map((user, key) =>
                 <li style={styles.li} key={key}>
                     <p style={styles.online}>.</p>
+
                     {user.username}
                 </li>
             )
@@ -18,6 +19,7 @@ class UserList extends React.Component {
                 <p style={styles.title}>
                     Users in chat
                 </p>
+
                 <ul style={styles.ul}>
                     {users}
                 </ul>

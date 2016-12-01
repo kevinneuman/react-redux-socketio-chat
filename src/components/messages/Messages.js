@@ -16,6 +16,7 @@ class Messages extends React.Component {
                     <p style={styles.timestampText}>
                         {chat.timestamp}
                     </p>
+
                     <p style={styles.messageText}>
                         {chat.sender}: {chat.message}
                     </p>

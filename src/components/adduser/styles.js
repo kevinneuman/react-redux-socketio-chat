@@ -1,9 +1,8 @@
 module.exports = {
     form: {
-        backgroundColor: '#4d4d4d',
         width: 340,
-        paddingTop: '300px',
         margin: '0 auto',
+        padding: '300px 0px 0px 0px',
     },
     title: {
         color: 'white',
@@ -13,7 +12,7 @@ module.exports = {
     input: {
         width: '100%',
         height: '40px',
-        marginBottom: 10,
+        margin: '0px 0px 10px 0px',
         padding: 10,
     },
     button: {

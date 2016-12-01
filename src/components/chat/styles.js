@@ -2,8 +2,8 @@ module.exports = {
     title: {
         color: 'white',
         fontWeight: 'bold',
-        padding: 10,
         margin: 0,
+        padding: 10,
     },
     input: {
         position: 'fixed',

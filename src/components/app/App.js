@@ -24,8 +24,8 @@ class App extends React.Component {
                     <Chat
                         dispatch={dispatch}
                         username={user.username}
-                        userlist={userlist.users}
-                        chat={chat} />
+                        userlist={userlist.userlist}
+                        messages={chat.messages} />
                 }
             </div>
         )

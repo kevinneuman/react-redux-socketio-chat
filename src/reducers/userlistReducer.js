@@ -1,11 +1,11 @@
 export default function reducer(state = {
-    users: []
+    userlist: []
 }, action) {
     switch (action.type) {
-        case "USERS_ADD": {
+        case "USERLIST_ADD": {
             return {
                 ...state,
-                users: action.payload
+                userlist: action.payload
             }
         }
     }
