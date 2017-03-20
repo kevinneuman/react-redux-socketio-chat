@@ -9,9 +9,10 @@ class App extends React.Component {
     }
 
     render() {
-        const { user } = this.props;
-        const addUser = !user.username ? <AddUser /> : null;
-        const chat = user.username ? <Chat /> : null;
+        const username = this.props.user.username;
+
+        const addUser = !username ? <AddUser /> : null;
+        const chat = username ? <Chat /> : null;
 
         return (
             <div>
