@@ -1,9 +1,9 @@
-module.exports = {
+export default {
     title: {
         color: 'white',
         fontWeight: 'bold',
         margin: 0,
-        padding: 10,
+        padding: 10
     },
     input: {
         position: 'fixed',
@@ -11,7 +11,7 @@ module.exports = {
         left: 0,
         width: '65%',
         height: '60px',
-        padding: 10,
+        padding: 10
     },
     button: {
         backgroundColor: '#ccc',
@@ -20,6 +20,6 @@ module.exports = {
         position: 'fixed',
         bottom: 0,
         right: '20%',
-        borderRadius: 0,
+        borderRadius: 0
     }
-}
+};

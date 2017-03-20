@@ -8,8 +8,8 @@ export default function reducer(state = {
                     ...state.messages,
                     action.payload
                 ]
-            }
+            };
         }
     }
-    return state
+    return state;
 }

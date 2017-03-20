@@ -1,18 +1,19 @@
 import React from "react";
-import styles from './styles';
+import styles from './styles/UserListStyles';
 
 class UserList extends React.Component {
     render() {
         const { userlist } = this.props;
 
-        const users =
-            userlist.map((user, key) =>
-                <li style={styles.li} key={key}>
-                    <p style={styles.online}>.</p>
+        const users = userlist.map((user, key) =>
+            <li style={styles.li} key={key}>
+                <p style={styles.online}>
+                    .
+                </p>
 
-                    {user.username}
-                </li>
-            )
+                {user.username}
+            </li>
+        );
 
         return (
             <div style={styles.container}>
@@ -24,7 +25,7 @@ class UserList extends React.Component {
                     {users}
                 </ul>
             </div>
-        )
+        );
     }
 }
 

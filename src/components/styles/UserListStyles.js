@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     container: {
         backgroundColor: '#222222',
         width: '20%',
@@ -7,28 +7,28 @@ module.exports = {
         right: 0,
         bottom: 0,
         margin: 0,
-        padding: 0,
+        padding: 0
     },
     title: {
         color: 'white',
         fontWeight: 'bold',
         margin: 0,
-        padding: 10,
+        padding: 10
     },
     ul: {
         listStyleType: 'none',
         margin: 0,
-        padding: 10,
+        padding: 10
     },
     li: {
         color: 'white',
         margin: 0,
-        padding: 0,
+        padding: 0
     },
     online: {
         display: 'inline-block',
         color: 'green',
         fontSize: 60,
-        margin: '-48.89px 0px 0px 0px',
+        margin: '-48.89px 0px 0px 0px'
     }
-}
+};

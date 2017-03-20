@@ -6,8 +6,8 @@ export default function reducer(state = {
             return {
                 ...state,
                 userlist: action.payload
-            }
+            };
         }
     }
-    return state
+    return state;
 }
