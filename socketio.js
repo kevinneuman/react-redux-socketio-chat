@@ -7,16 +7,16 @@ var io = require('socket.io')(http);
 var userlist = [];
 function updateUserlist(action, sender) {
     // add user to userlist
-    if (action == 'join') {
+    if (action === 'join') {
         userlist.push({
             username: sender
         });
     }
 
     // remove user from userlist
-    else if (action == 'leave') {
+    else if (action === 'leave') {
         userlist.map((user, index) => {
-            if (user.username == sender) {
+            if (user.username === sender) {
                 userlist.splice(index, 1);
             }
         });
@@ -56,6 +56,4 @@ io.on('connection', function (socket) {
     });
 });
 
-http.listen(3001, function () {
-    console.log('Socket.IO listening on port 3001');
-});
+http.listen(3001);
